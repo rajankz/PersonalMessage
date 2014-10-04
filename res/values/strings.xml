@@ -8,6 +8,9 @@
     <string name="green">Green</string>
     <string name="blue">Blue</string>
     <string name="alpha">Alpha</string>
-    <string name="sendMessage">Send Message</string>
+    <string name="shareCanvas">Share Canvas</string>
+    <string name="clearCanvas">Clear Canvas</string>
+    <string name="default_0">0</string>
+    <string name="err_no_canvas_image">Unable to get image from Canvas</string>
 
 </resources>
