@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.rajankz.personalmessage.MainActivity" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+       	<LinearLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical" >
+			<LinearLayout 
+			    android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:orientation="horizontal">
+			    <TextView
+			        android:id="@+id/txtRed"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="0.3"
+			        android:layout_gravity="center_vertical"
+			        android:text="@string/red" />
+            	<SeekBar
+	                android:id="@+id/seekRed"
+	                android:layout_width="0dp"
+	                android:layout_weight="0.5"
+	                android:max="255"
+	                android:layout_gravity="center_vertical"
+	                android:layout_height="wrap_content"/>
+            	<EditText 
+            	    android:id="@+id/valueRed"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center_vertical"
+	                android:inputType="number"
+	                android:maxLength="3"
+	                android:layout_weight="0.2" />
+			</LinearLayout>
+            
+			<LinearLayout 
+			    android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:orientation="horizontal">
+			    <TextView
+			        android:id="@+id/txtGreen"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="0.3"
+			        android:layout_gravity="center_vertical"
+			        android:text="@string/green" />
+            	<SeekBar
+	                android:id="@+id/seekGreen"
+	                android:layout_width="0dp"
+	                android:layout_weight="0.5"
+	                android:max="255"
+	                android:layout_gravity="center_vertical"
+	                android:layout_height="wrap_content"/>
+            	<EditText 
+            	    android:id="@+id/valueGreen"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center_vertical"
+	                android:inputType="number"
+	                android:maxLength="3"
+	                android:layout_weight="0.2" />
+			</LinearLayout>
+			
+			<LinearLayout 
+			    android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:orientation="horizontal">
+			    <TextView
+			        android:id="@+id/txtBlue"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="0.3"
+			        android:layout_gravity="center_vertical"
+			        android:text="@string/blue" />
+            	<SeekBar
+	                android:id="@+id/seekBlue"
+	                android:layout_width="0dp"
+	                android:layout_weight="0.5"
+	                android:max="255"
+	                android:layout_gravity="center_vertical"
+	                android:layout_height="wrap_content"/>
+            	<EditText 
+            	    android:id="@+id/valueBlue"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center_vertical"
+	                android:inputType="number"
+	                android:maxLength="3"
+	                android:layout_weight="0.2" />
+			</LinearLayout>
+			
+			<LinearLayout 
+			    android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:orientation="horizontal">
+			    <TextView
+			        android:id="@+id/txtAlpha"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="0.3"
+			        android:layout_gravity="center_vertical"
+			        android:text="@string/alpha" />
+            	<SeekBar
+	                android:id="@+id/seekAlpha"
+	                android:layout_width="0dp"
+	                android:layout_weight="0.5"
+	                android:max="255"
+	                android:layout_gravity="center_vertical"
+	                android:layout_height="wrap_content"/>
+            	<EditText 
+            	    android:id="@+id/valueAlpha"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center_vertical"
+	                android:inputType="number"
+	                android:maxLength="3"
+	                android:layout_weight="0.2" />
+			</LinearLayout>
+        </LinearLayout>
+        <com.rajankz.personalmessage.DrawingView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sendMessage" />
+        
+    </LinearLayout>
+
+</RelativeLayout>
